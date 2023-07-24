@@ -67,7 +67,7 @@ export default {
     methods: {
         async logIn() {
             if (this.password !== this.repeatPassword) {
-                this.errorMessage = 'Пароли не свопадают';
+                this.errorMessage = 'Пароли не совпадают';
                 return;
             }
 
