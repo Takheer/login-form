@@ -27,6 +27,7 @@
                     @click='showPassword = !showPassword'
                     class="btn btn-outline-secondary"
                     type="button"
+                    tabindex='-1'
                 >
                     <img :src='require(`~/assets/icons/${showPassword ? "hide" : "show"}.png`)' alt=''/>
                 </button>
