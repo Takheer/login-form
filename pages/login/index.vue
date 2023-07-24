@@ -22,8 +22,13 @@
                     :type='showPassword ? "text" : "password"'
                     class='form-control'
                     aria-describedby="button-addon2">
-                <button id="button-addon2" @click='showPassword = !showPassword' class="btn btn-outline-secondary" type="button">
-                    <img :src='require(`~/assets/icons/${showPassword ? "hide" : "show"}.png`)'/>
+                <button
+                    id="button-addon2"
+                    @click='showPassword = !showPassword'
+                    class="btn btn-outline-secondary"
+                    type="button"
+                >
+                    <img :src='require(`~/assets/icons/${showPassword ? "hide" : "show"}.png`)' alt=''/>
                 </button>
             </div>
         </div>
@@ -31,7 +36,11 @@
             <label for='repeatPassword' class="form-label">
                 Повторите пароль
             </label>
-            <input id='repeatPassword' v-model='repeatPassword' :type='showPassword ? "text" : "password"' class='form-control'>
+            <input
+                id='repeatPassword'
+                v-model='repeatPassword'
+                :type='showPassword ? "text" : "password"'
+                class='form-control'>
         </div>
         <button @click='logIn' type="button" class="btn btn-primary mb-3">
             Войти
